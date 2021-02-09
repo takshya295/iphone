@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>My iphone</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">iPhones</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More Apple Devices
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Ipad</a></li>
+              <li><a class="dropdown-item" href="#">Macbook</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Apple Accesories</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+
+        </form>
+        <div class="mx-4">
+          <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--login modale-->
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <label for="inputEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="inputEmail" class="form-control my-4" placeholder="Email address" required="" autofocus="">
+            <label for="inputPassword" class="visually-hidden">Password</label>
+            <input type="password" id="inputPassword" class="form-control my-4 " placeholder="Password" required="">
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+           
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--sign up modal-->
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h1 class="h3 mb-3 fw-normal">Please sign Up</h1>
+          <label for="inputEmail" class="visually-hidden">Email address</label>
+          <input type="email" id="inputEmail" class="form-control my-4" placeholder="Email address" required="" autofocus="">
+          <label for="inputPassword" class="visually-hidden">Password</label>
+          <input type="password" id="inputPassword" class="form-control my-4" placeholder="Password" required="">
+          <label for="inputPassword" class="visually-hidden">Confirm Password</label>
+          <input type="password" id="inputPassword" class="form-control my-4" placeholder="Confirm Password" required="">
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+         
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="carouselloginCaptions" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselexampleCaptions" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselexampleCaptions" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="apple" class="img-fluid" src="111.jfif" class="d-block w-100"
+          alt="https://source.unsplash.com/1600x900/?iphone">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>iphone</h5>
+          <p class="subt">Check out the latest iphones</p>
+          <button type="button" class="btn btn-primary">Stunning New Design</button>
+          <button type="button" class="btn btn-secondary">Great Camera</button>
+          <button type="button" class="btn btn-success">Best Processor</button>
+
+
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="apple" src="2222.jfif" class="img-fluid" class="d-block w-100"
+          alt="https://source.unsplash.com/1600x900/?macbook">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Macbook</h5>
+          <p class="subt">The new Macbook is amazing</p>
+          <button type="button" class="btn btn-primary">Amazing Operating System</button>
+          <button type="button" class="btn btn-secondary">Sleek Design</button>
+          <button type="button" class="btn btn-success">Performance </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="apple" src="333.jfif" class="img-fluid" class="d-block w-100"
+          alt="https://source.unsplash.com/1600x900/?iphone">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>ipad</h5>
+          <p class="subt">Size Matters</p>
+          <button type="button" class="btn btn-primary">Vivid Display</button>
+          <button type="button" class="btn btn-secondary">Better Gaming Experience</button>
+          <button type="button" class="btn btn-success">Light Weight</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <div class="container my-4">
+
+    <body>
+
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Why the iphone 12 mini might be the perfect phone for
+                  you </strong>
+                <h3 class="mb-0">The Form Factor</h3>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">Check out why it may be the ideal choice for you</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="iph.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">iphone 12 Back with the classic iphone design</strong>
+                <h3 class="mb-0">for the iphone 5 admirers in 2021</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This may be probably the best looking flagship phone apple has ever designed</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="12.jfif" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 Apple, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    </body>
+
+</html>
